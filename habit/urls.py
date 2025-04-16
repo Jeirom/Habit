@@ -11,7 +11,6 @@ router = SimpleRouter()
 router.register('', HabitViewSet)
 
 urlpatterns = [
-    # path('tracker/', HabitViewSet.as_view(), namespace='tracker'),
 ]
 
 
