@@ -1,10 +1,10 @@
 from urllib import request
 
-from django.core import paginator
 from rest_framework.viewsets import ModelViewSet
-from django.core.paginator import Paginator
 
 from habit.models import Habit
+from habit.paginators import HabitPagination
+from habit.permissions import IsOwnerOrPublic
 from habit.serializer import HabitSerializer
 from habit.validators import validate_time_limit, validate_frequency
 
@@ -14,11 +14,10 @@ class HabitViewSet(ModelViewSet):
     queryset = Habit.objects.all()
     validators = [validate_time_limit, validate_frequency]
     serializer_class = HabitSerializer
-    paginator = Paginator(queryset, 5)  # Создаем объект пагинатора, указывая количество объектов на странице
-    page_number = request.GET.get('page')  # Получаем номер страницы из GET параметров
-    page_obj = paginator.get_page(page_number)  # Получаем объекты для текущей страницы
+    pagination_class = HabitPagination # Вывод 5 элементов на одной странице
 
-    #    permission_classes = [~IsModer, AllowAny,] # IsAuthenticated
+    permission_classes = [IsOwnerOrPublic]
+
 
     # def get_serializer_class(self):
     #     if self.action == 'retrieve':
