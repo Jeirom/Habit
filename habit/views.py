@@ -15,7 +15,8 @@ class HabitViewSet(ModelViewSet):
     validators = [validate_time_limit, validate_frequency]
     serializer_class = HabitSerializer
     pagination_class = HabitPagination # Вывод 5 элементов на одной странице
-
+    # template_name = "habit_main.html"
+    # context_object_name = "habit"
     permission_classes = [IsOwnerOrPublic]
 
 

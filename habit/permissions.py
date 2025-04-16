@@ -9,5 +9,5 @@ class IsOwnerOrPublic(permissions.BasePermission):
     def has_object_permission(self, request, view, obj):
         # Позволяем редактировать, если пользователь является владельцем
         if request.method in permissions.SAFE_METHODS:
-            return obj.is_public or obj.owner == request.user
-        return obj.owner == request.user
+            return obj.is_public or obj.user == request.user
+        return obj.user == request.user

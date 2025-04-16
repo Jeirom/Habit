@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мои Привычки</title>
+</head>
+<body>
+    <h1>Список Привычек</h1>
+
+    <!-- Кнопка для создания новой привычки -->
+    <a href="{% url '#' %}"><button>Создать привычку</button></a>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Привычка</th>
+                <th>Место выполнения</th>
+                <th>Во сколько выполнять</th>
+                <th>Действия</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for habit in habits %}
+                <tr>
+                    <td>{{ habit.action }}</td>
+                    <td>{{ habit.place }}</td>
+                    <td>{{ habit.time }}</td>
+                    <td>
+                        <a href="{% url '#' habit.id %}"><button>Просмотреть</button></a>
+                        <a href="{% url '#' habit.id %}"><button>Редактировать</button></a>
+                        <form action="{% url '#' habit.id %}" method="post" style="display:inline;">
+                            {% csrf_token %}
+                            <button type="submit">Удалить</button>
+                        </form>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <!-- Кнопка для перехода на страницу пользователя -->
+    <a href="{% url 'user-profile' user.id %}"><button>Профиль пользователя</button></a>
+
+    <!-- Кнопки для аутентификации -->
+    {% if user.is_authenticated %}
+        <form action="{% url '#' %}" method="post" style="display:inline;">
+            {% csrf_token %}
+            <button type="submit">Выход</button>
+        </form>
+    {% else %}
+        <a href="{% url '#' %}"><button>Вход</button></a>
+        <a href="{% url '#' %}"><button>Регистрация</button></a>
+    {% endif %}
+</body>
+</html>
