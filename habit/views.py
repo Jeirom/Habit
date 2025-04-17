@@ -13,14 +13,32 @@ from habit.validators import validate_time_limit, validate_frequency
 
 
 class HabitViewSet(ModelViewSet):
+    """ViewSet для управления привычками пользователей.
+
+    Этот ViewSet предоставляет стандартные операции CRUD (создание, чтение, обновление, удаление)
+    для модели привычки.  Включает валидацию данных при создании и обновлении, пагинацию результатов
+    и проверку прав доступа, позволяя просматривать привычку либо её владельцу, либо всем,
+    если привычка имеет статус публичной (is_public=True).
+
+    Атрибуты:
+        queryset: Запрос для получения всех объектов привычки.
+        validators: Список валидаторов, применяемых при создании и обновлении привычки.
+                    Включает валидацию на ограничение времени выполнения и периодичность.
+        serializer_class: Сериализатор для модели привычки.
+        pagination_class: Класс для пагинации результатов.  Выводит 5 элементов на странице.
+        permission_classes: Список классов разрешений, определяющих права доступа к привычке.
+                           Включает проверку на то, является ли пользователь владельцем привычки,
+                           или является ли привычка публичной.
+
+    Методы:
+        public_habits(request): Возвращает список публичных привычек с применением пагинации.
+    """
 
     queryset = Habit.objects.all()
-    validators = [validate_time_limit, validate_frequency]
+    validators = [validate_time_limit, validate_frequency] # Проверка на периодичность выполнения привычки и времени выполнения
     serializer_class = HabitSerializer
     pagination_class = HabitPagination # Вывод 5 элементов на одной странице
-    # template_name = "habit_main.html"
-    # context_object_name = "habit"
-    permission_classes = [IsOwnerOrPublic]
+    permission_classes = [IsOwnerOrPublic] # Либо владелец, либо статус привычки - публичный (is_public=True)
 
     @action(detail=False, methods=['get'], url_path='public')
     def public_habits(self, request):
@@ -32,24 +50,3 @@ class HabitViewSet(ModelViewSet):
 
         serializer = self.get_serializer(public_habits, many=True)
         return Response(serializer.data)
-
-
-
-    # def get_serializer_class(self):
-    #     if self.action == 'retrieve':
-    #         return CourseDetailSerializer
-    #     return CourseSerializer
-    #
-    # def perform_create(self, serializer):
-    #     lesson = serializer.save()
-    #     lesson.owner = self.request.user
-    #     lesson.save()
-    #
-    # def get_permissions(self):
-    #     if self.action == 'create':
-    #         self.permission_classes = (~IsModer,)
-    #     elif self.action in ['update', 'retrieve']:
-    #         self.permission_classes = (IsModer | IsOwner,)
-    #     elif self.action == 'destroy':
-    #         self.permission_classes = (IsOwner | ~IsModer,)
-    #     return super().get_permissions()
