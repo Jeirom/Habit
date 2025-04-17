@@ -1,5 +1,6 @@
 from rest_framework import permissions
 
+
 class IsOwnerOrPublic(permissions.BasePermission):
     """
     Позволяет редактировать объект только его владельцу,

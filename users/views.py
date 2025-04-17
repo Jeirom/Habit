@@ -18,12 +18,12 @@ logger = logging.getLogger(__name__)
 
 
 class UserCreateView(CreateView):
-    """ Контроллер для создания нового пользователя. """
+    """Контроллер для создания нового пользователя."""
 
     model = User
     form_class = UserRegisterForm
-    success_url = reverse_lazy('users:login')
-    template_name = 'register.html'
+    success_url = reverse_lazy("users:login")
+    template_name = "register.html"
 
     def form_valid(self, form: UserRegisterForm) -> HttpResponse:
         """
@@ -39,12 +39,12 @@ class UserCreateView(CreateView):
         user.save()
 
         host = self.request.get_host()
-        url = f'http://{host}/email-confirm/{token}/'
+        url = f"http://{host}/email-confirm/{token}/"
         send_mail(
-            subject='Подтвердите email адрес',
-            message=f'Для успешной регистрации на сайте подтвердите свой email адрес по ссылке {url}',
+            subject="Подтвердите email адрес",
+            message=f"Для успешной регистрации на сайте подтвердите свой email адрес по ссылке {url}",
             from_email=EMAIL_HOST_USER,
-            recipient_list=[user.email]
+            recipient_list=[user.email],
         )
         return super().form_valid(form)
 
@@ -62,17 +62,19 @@ def email_verification(request, token: str) -> HttpResponse:
         logger.info(f"{user.email} пытается зарегистрироваться")
         user.is_active = True
         user.save()
-        return redirect(reverse('users:login'))
+        return redirect(reverse("users:login"))
     except Exception as e:
         logger.error(f"Ошибка при проверке токена: {e}")
-        return redirect(reverse('users:register'))
+        return redirect(reverse("users:register"))
 
 
 class CustomLoginView(LoginView):
-    """ Контроллер для входа пользователя. """
+    """Контроллер для входа пользователя."""
 
-    template_name = 'login.html'
-    redirect_authenticated_user = True  # Перенаправление, если пользователь уже авторизован
+    template_name = "login.html"
+    redirect_authenticated_user = (
+        True  # Перенаправление, если пользователь уже авторизован
+    )
     success_url = reverse_lazy("users:home")
 
     def form_valid(self, form) -> HttpResponse:
@@ -82,14 +84,16 @@ class CustomLoginView(LoginView):
         :param form: Заполненная форма входа
         :return: HttpResponse
         """
-        logger.info(f"{form.cleaned_data['username']} вошел в систему в {timezone.now()}")
+        logger.info(
+            f"{form.cleaned_data['username']} вошел в систему в {timezone.now()}"
+        )
         return super().form_valid(form)
 
 
 class CustomLogoutView(LogoutView):
-    """ Контроллер для выхода пользователя. """
+    """Контроллер для выхода пользователя."""
 
-    template_name = 'logout.html'
+    template_name = "logout.html"
     success_url = reverse_lazy("users:home")
 
     def dispatch(self, request, *args, **kwargs) -> HttpResponse:
@@ -104,14 +108,14 @@ class CustomLogoutView(LogoutView):
 
 
 class UserDetailView(DetailView):
-    """ Контроллер просмотра профиля пользователя в сервисе. """
+    """Контроллер просмотра профиля пользователя в сервисе."""
 
     model = User
-    template_name = 'profile.html'
+    template_name = "profile.html"
 
 
 class UserUpdateView(UpdateView):
-    """ Контроллер редактирования профиля пользователя в сервисе. """
+    """Контроллер редактирования профиля пользователя в сервисе."""
 
     model = User
 
@@ -125,7 +129,7 @@ def profile_view(request) -> HttpResponse:
     :return: HttpResponse
     """
     user = request.user
-    return render(request, 'profile.html', {'user': user})
+    return render(request, "profile.html", {"user": user})
 
 
 @login_required
