@@ -1,0 +1,2483 @@
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 12068
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2208
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Z:\MyProjects\Habit\config\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 2306
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2357
+Unauthorized: /habit/
+"GET /habit/ HTTP/1.1" 401 9809
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+"GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+"GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+"GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3796
+"GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1793
+"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3426
+"GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+"GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 200 59
+"GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+"GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+"GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+"GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 200 87533
+Watching for file changes with StatReloader
+Internal Server Error: /habit/
+Traceback (most recent call last):
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\mixins.py", line 45, in list
+    serializer = self.get_serializer(queryset, many=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\generics.py", line 112, in get_serializer
+    serializer_class = self.get_serializer_class()
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\generics.py", line 126, in get_serializer_class
+    assert self.serializer_class is not None, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'HabitViewSet' should either include a `serializer_class` attribute, or override the `get_serializer_class()` method.
+"GET /habit/ HTTP/1.1" 500 106181
+Internal Server Error: /habit/
+Traceback (most recent call last):
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\mixins.py", line 45, in list
+    serializer = self.get_serializer(queryset, many=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\generics.py", line 112, in get_serializer
+    serializer_class = self.get_serializer_class()
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\generics.py", line 126, in get_serializer_class
+    assert self.serializer_class is not None, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'HabitViewSet' should either include a `serializer_class` attribute, or override the `get_serializer_class()` method.
+"GET /habit/ HTTP/1.1" 500 106181
+Internal Server Error: /habit/
+Traceback (most recent call last):
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\mixins.py", line 45, in list
+    serializer = self.get_serializer(queryset, many=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\generics.py", line 112, in get_serializer
+    serializer_class = self.get_serializer_class()
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\generics.py", line 126, in get_serializer_class
+    assert self.serializer_class is not None, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'HabitViewSet' should either include a `serializer_class` attribute, or override the `get_serializer_class()` method.
+"GET /habit/ HTTP/1.1" 500 106181
+Internal Server Error: /habit/
+Traceback (most recent call last):
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\mixins.py", line 45, in list
+    serializer = self.get_serializer(queryset, many=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\generics.py", line 112, in get_serializer
+    serializer_class = self.get_serializer_class()
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\generics.py", line 126, in get_serializer_class
+    assert self.serializer_class is not None, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'HabitViewSet' should either include a `serializer_class` attribute, or override the `get_serializer_class()` method.
+"GET /habit/ HTTP/1.1" 500 106181
+Internal Server Error: /habit/
+Traceback (most recent call last):
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\mixins.py", line 45, in list
+    serializer = self.get_serializer(queryset, many=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\generics.py", line 112, in get_serializer
+    serializer_class = self.get_serializer_class()
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\generics.py", line 126, in get_serializer_class
+    assert self.serializer_class is not None, (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'HabitViewSet' should either include a `serializer_class` attribute, or override the `get_serializer_class()` method.
+"GET /habit/ HTTP/1.1" 500 106181
+Z:\MyProjects\Habit\habit\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Z:\MyProjects\Habit\habit\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /habit/ HTTP/1.1" 200 15756
+Bad Request: /habit/
+"POST /habit/ HTTP/1.1" 400 16303
+Bad Request: /habit/
+"POST /habit/ HTTP/1.1" 400 16127
+Bad Request: /habit/
+"POST /habit/ HTTP/1.1" 400 16134
+Z:\MyProjects\Habit\habit\models.py changed, reloading.
+Watching for file changes with StatReloader
+Bad Request: /habit/
+"POST /habit/ HTTP/1.1" 400 16329
+"GET /habit/ HTTP/1.1" 200 15951
+"OPTIONS /habit/ HTTP/1.1" 200 19705
+Z:\MyProjects\Habit\habit\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+Z:\MyProjects\Habit\habit\views.py changed, reloading.
+Watching for file changes with StatReloader
+Z:\MyProjects\Habit\habit\validators.py changed, reloading.
+Watching for file changes with StatReloader
+Bad Request: /habit/
+"POST /habit/ HTTP/1.1" 400 16179
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 2306
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2357
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 4157
+"GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2804
+"GET /static/admin/css/login.css HTTP/1.1" 200 951
+"GET /static/admin/css/base.css HTTP/1.1" 200 22092
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+"GET /static/admin/css/responsive.css HTTP/1.1" 200 17972
+"GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+Watching for file changes with StatReloader
+"POST /admin/login/?next=/admin/ HTTP/1.1" 200 4325
+"POST /admin/login/?next=/admin/ HTTP/1.1" 200 4325
+"POST /admin/login/?next=/admin/ HTTP/1.1" 200 4325
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 2306
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 4157
+"GET /static/admin/css/login.css HTTP/1.1" 200 951
+"GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2804
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+"GET /static/admin/css/responsive.css HTTP/1.1" 200 17972
+"GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+"GET /static/admin/css/base.css HTTP/1.1" 200 22092
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 9177
+"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+"GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+"GET /habit/ HTTP/1.1" 200 16239
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3426
+"GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+"GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+"GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3796
+"GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+"GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+"GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1793
+"GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 200 59
+"GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+"GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+"GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 200 87533
+Internal Server Error: /habit/
+Traceback (most recent call last):
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\renderers.py", line 727, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\renderers.py", line 658, in get_context
+    raw_data_post_form = self.get_raw_data_form(data, view, 'POST', request)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\renderers.py", line 541, in get_raw_data_form
+    if not self.show_form_for_method(view, method, request, instance):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\renderers.py", line 433, in show_form_for_method
+    view.check_object_permissions(request, obj)
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\views.py", line 345, in check_object_permissions
+    if not permission.has_object_permission(request, self, obj):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "Z:\MyProjects\Habit\habit\permissions.py", line 13, in has_object_permission
+    return obj.owner == request.user
+           ^^^^^^^^^
+AttributeError: 'Habit' object has no attribute 'owner'
+"POST /habit/ HTTP/1.1" 500 108059
+Z:\MyProjects\Habit\habit\permissions.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /habit/ HTTP/1.1" 201 10295
+"GET /habit/ HTTP/1.1" 200 17447
+"POST /habit/ HTTP/1.1" 201 10295
+"GET /habit/ HTTP/1.1" 200 18049
+"POST /habit/ HTTP/1.1" 201 10295
+"GET /habit/ HTTP/1.1" 200 18651
+Z:\MyProjects\Habit\habit\views.py changed, reloading.
+Watching for file changes with StatReloader
+Z:\MyProjects\Habit\habit\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 2306
+"GET /habit/ HTTP/1.1" 200 18651
+"OPTIONS /habit/ HTTP/1.1" 200 20242
+"OPTIONS /habit/ HTTP/1.1" 200 20242
+Watching for file changes with StatReloader
+Z:\MyProjects\Habit\habit\views.py changed, reloading.
+Watching for file changes with StatReloader
+Unauthorized: /habit/
+"POST /habit/ HTTP/1.1" 401 172
+Z:\MyProjects\Habit\config\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Bad Request: /habit/
+"POST /habit/ HTTP/1.1" 400 220
+Bad Request: /habit/
+"POST /habit/ HTTP/1.1" 400 220
+"GET /habit/ HTTP/1.1" 200 807
+Z:\MyProjects\Habit\users\admin.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /register/
+"GET /register/ HTTP/1.1" 404 2351
+Not Found: /register/
+"POST /register/ HTTP/1.1" 404 2352
+Not Found: /habit/register/
+"GET /habit/register/ HTTP/1.1" 404 23
+Z:\MyProjects\Habit\config\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Unauthorized: /habit/register/
+"GET /habit/register/ HTTP/1.1" 401 172
+Unauthorized: /habit/register/
+"GET /habit/register/ HTTP/1.1" 401 172
+Not Found: /register/
+"GET /register/ HTTP/1.1" 404 2351
+Not Found: /user/register/
+"GET /user/register/ HTTP/1.1" 404 2366
+Z:\MyProjects\Habit\config\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Unauthorized: /users/register/
+"GET /users/register/ HTTP/1.1" 401 172
+Unauthorized: /users/register/
+"GET /users/register/ HTTP/1.1" 401 172
+Z:\MyProjects\Habit\config\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Unauthorized: /users/register/
+"GET /users/register/ HTTP/1.1" 401 172
+Unauthorized: /users/register/
+"GET /users/register/ HTTP/1.1" 401 172
+Method Not Allowed: /users/register/
+"GET /users/register/ HTTP/1.1" 405 40
+Bad Request: /users/register/
+"POST /users/register/ HTTP/1.1" 400 76
+Bad Request: /users/register/
+"POST /users/register/ HTTP/1.1" 400 76
+Bad Request: /users/register/
+"POST /users/register/ HTTP/1.1" 400 77
+Bad Request: /users/register/
+"POST /users/register/ HTTP/1.1" 400 77
+Bad Request: /users/register/
+"POST /users/register/ HTTP/1.1" 400 76
+Unsupported Media Type: /users/register/
+"POST /users/register/ HTTP/1.1" 415 62
+Bad Request: /users/register/
+"POST /users/register/ HTTP/1.1" 400 77
+Watching for file changes with StatReloader
+Unauthorized: /users/register/
+"POST /users/register/ HTTP/1.1" 401 58
+Not Found: /users/login/
+"POST /users/login/ HTTP/1.1" 404 3172
+Unauthorized: /users/register/
+"POST /users/register/ HTTP/1.1" 401 58
+Z:\MyProjects\Habit\config\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Forbidden (CSRF cookie not set.): /users/register/
+"POST /users/register/ HTTP/1.1" 403 2855
+Forbidden (CSRF cookie not set.): /users/register/
+"POST /users/register/ HTTP/1.1" 403 2855
+Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\engine.py", line 163, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\backends\django.py", line 109, in render
+    reraise(exc, self.backend)
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\backends\django.py", line 130, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+"GET /users/register/ HTTP/1.1" 500 135440
+Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\engine.py", line 163, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\backends\django.py", line 109, in render
+    reraise(exc, self.backend)
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\backends\django.py", line 130, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+"GET /users/register/ HTTP/1.1" 500 135577
+Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\engine.py", line 163, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\backends\django.py", line 109, in render
+    reraise(exc, self.backend)
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\backends\django.py", line 130, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+"GET /users/register/ HTTP/1.1" 500 135577
+Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\engine.py", line 163, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\backends\django.py", line 109, in render
+    reraise(exc, self.backend)
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\backends\django.py", line 130, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+"GET /users/register/ HTTP/1.1" 500 135577
+Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\engine.py", line 163, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\backends\django.py", line 109, in render
+    reraise(exc, self.backend)
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\backends\django.py", line 130, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+"GET /users/register/ HTTP/1.1" 500 135577
+Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\engine.py", line 163, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\backends\django.py", line 109, in render
+    reraise(exc, self.backend)
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\backends\django.py", line 130, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+"GET /users/register/ HTTP/1.1" 500 135577
+Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\engine.py", line 163, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\backends\django.py", line 109, in render
+    reraise(exc, self.backend)
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\backends\django.py", line 130, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+"GET /users/register/ HTTP/1.1" 500 135577
+Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\engine.py", line 163, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\backends\django.py", line 109, in render
+    reraise(exc, self.backend)
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\backends\django.py", line 130, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+"GET /users/register/ HTTP/1.1" 500 135577
+Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\engine.py", line 163, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\backends\django.py", line 109, in render
+    reraise(exc, self.backend)
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\backends\django.py", line 130, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+"GET /users/register/ HTTP/1.1" 500 135577
+Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\engine.py", line 163, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\backends\django.py", line 109, in render
+    reraise(exc, self.backend)
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\backends\django.py", line 130, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+"GET /users/register/ HTTP/1.1" 500 135577
+Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\engine.py", line 163, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\backends\django.py", line 109, in render
+    reraise(exc, self.backend)
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\backends\django.py", line 130, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+"GET /users/register/ HTTP/1.1" 500 135577
+Watching for file changes with StatReloader
+Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\defaulttags.py", line 1035, in find_library
+    return parser.libraries[name]
+           ~~~~~~~~~~~~~~~~^^^^^^
+KeyError: 'my_tags_user'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\defaulttags.py", line 1097, in load
+    lib = find_library(parser, name)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\defaulttags.py", line 1037, in find_library
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'my_tags_user' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_urls
+cache
+i18n
+l10n
+log
+rest_framework
+static
+tz
+"GET /users/register/ HTTP/1.1" 500 183576
+Watching for file changes with StatReloader
+"GET /users/register/ HTTP/1.1" 200 5251
+"GET /static/css/bootstrap.min.css HTTP/1.1" 404 1877
+"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1892
+"POST /users/register/ HTTP/1.1" 302 0
+"GET /users/login/ HTTP/1.1" 302 0
+"GET /habit/ HTTP/1.1" 200 18797
+Not Found: /login/
+"GET /login/ HTTP/1.1" 404 2491
+Not Found: /users/llogin/
+"GET /users/llogin/ HTTP/1.1" 404 5153
+"GET /users/login/ HTTP/1.1" 302 0
+"GET /habit/ HTTP/1.1" 200 18797
+Method Not Allowed (GET): /users/logout/
+Method Not Allowed: /users/logout/
+"GET /users/logout/ HTTP/1.1" 405 0
+"GET /admin/ HTTP/1.1" 200 9987
+"POST /admin/logout/ HTTP/1.1" 302 0
+Not Found: /login/
+"GET /login/ HTTP/1.1" 404 2491
+Not Found: /register/
+"GET /register/ HTTP/1.1" 404 2500
+"GET /users/register/ HTTP/1.1" 200 5173
+"GET /static/css/bootstrap.min.css HTTP/1.1" 404 1877
+"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1892
+"POST /users/register/ HTTP/1.1" 200 5368
+"GET /static/css/bootstrap.min.css HTTP/1.1" 404 1877
+"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1892
+"GET /users/login/ HTTP/1.1" 200 3660
+"GET /static/css/bootstrap.min.css HTTP/1.1" 404 1877
+"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1892
+"POST /users/login/ HTTP/1.1" 200 3971
+"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1892
+"GET /static/css/bootstrap.min.css HTTP/1.1" 404 1877
+Not Found: /password_reset/
+"GET /password_reset/ HTTP/1.1" 404 2518
+"GET /users/password_reset/ HTTP/1.1" 200 3271
+"GET /static/css/bootstrap.min.css HTTP/1.1" 404 1877
+"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1892
+"POST /users/password_reset/ HTTP/1.1" 302 0
+"GET /users/password-reset/done/ HTTP/1.1" 200 3461
+"GET /static/css/bootstrap.min.css HTTP/1.1" 404 1877
+"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1892
+Not Found: /email-confirm/ba1e0ce3bef03ad5f3965e77b9a82ed6/
+"GET /email-confirm/ba1e0ce3bef03ad5f3965e77b9a82ed6/ HTTP/1.1" 404 2614
+"GET /users/email-confirm/ba1e0ce3bef03ad5f3965e77b9a82ed6/ HTTP/1.1" 302 0
+"GET /users/login/ HTTP/1.1" 200 3660
+"GET /static/css/bootstrap.min.css HTTP/1.1" 404 1877
+"GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 404 1892
+"POST /users/login/ HTTP/1.1" 302 0
+"GET /habit/ HTTP/1.1" 200 18811
+"GET /habit/ HTTP/1.1" 200 18811
+"GET /users/profile HTTP/1.1" 301 0
+Internal Server Error: /users/profile/
+Traceback (most recent call last):
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\urls\base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^
+KeyError: 'mailing'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "Z:\MyProjects\Habit\users\views.py", line 128, in profile_view
+    return render(request, 'profile.html', {'user': user})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\urls\base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'mailing' is not a registered namespace
+"GET /users/profile/ HTTP/1.1" 500 132626
+Watching for file changes with StatReloader
+Internal Server Error: /users/profile/
+Traceback (most recent call last):
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "Z:\MyProjects\Habit\users\views.py", line 128, in profile_view
+    return render(request, 'profile.html', {'user': user})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'habit' not found. 'habit' is not a valid view function or pattern name.
+"GET /users/profile/ HTTP/1.1" 500 131361
+Internal Server Error: /users/profile/
+Traceback (most recent call last):
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "Z:\MyProjects\Habit\users\views.py", line 128, in profile_view
+    return render(request, 'profile.html', {'user': user})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'habit' not found. 'habit' is not a valid view function or pattern name.
+"GET /users/profile/ HTTP/1.1" 500 131361
+Internal Server Error: /users/profile/
+Traceback (most recent call last):
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "Z:\MyProjects\Habit\users\views.py", line 128, in profile_view
+    return render(request, 'profile.html', {'user': user})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'habit' not found. 'habit' is not a valid view function or pattern name.
+"GET /users/profile/ HTTP/1.1" 500 131361
+Internal Server Error: /users/profile/
+Traceback (most recent call last):
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "Z:\MyProjects\Habit\users\views.py", line 128, in profile_view
+    return render(request, 'profile.html', {'user': user})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'habit' not found. 'habit' is not a valid view function or pattern name.
+"GET /users/profile/ HTTP/1.1" 500 131361
+Internal Server Error: /users/profile/
+Traceback (most recent call last):
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "Z:\MyProjects\Habit\users\views.py", line 128, in profile_view
+    return render(request, 'profile.html', {'user': user})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'habit' not found. 'habit' is not a valid view function or pattern name.
+"GET /users/profile/ HTTP/1.1" 500 131361
+Watching for file changes with StatReloader
+Internal Server Error: /users/profile/
+Traceback (most recent call last):
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "Z:\MyProjects\Habit\users\views.py", line 128, in profile_view
+    return render(request, 'profile.html', {'user': user})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'habit/' not found. 'habit/' is not a valid view function or pattern name.
+"GET /users/profile/ HTTP/1.1" 500 130623
+Internal Server Error: /users/profile/
+Traceback (most recent call last):
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "Z:\MyProjects\Habit\users\views.py", line 128, in profile_view
+    return render(request, 'profile.html', {'user': user})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'habit/' not found. 'habit/' is not a valid view function or pattern name.
+"GET /users/profile/ HTTP/1.1" 500 130623
+"GET /users/profile/ HTTP/1.1" 200 1887
+"GET /users/profile/ HTTP/1.1" 200 1887
+Method Not Allowed (GET): /users/logout/
+Method Not Allowed: /users/logout/
+"GET /users/logout/ HTTP/1.1" 405 0
+Method Not Allowed (GET): /users/logout/
+Method Not Allowed: /users/logout/
+"GET /users/logout/ HTTP/1.1" 405 0
+"GET /habit/ HTTP/1.1" 200 18811
+Z:\MyProjects\Habit\habit\views.py changed, reloading.
+Watching for file changes with StatReloader
+Z:\MyProjects\Habit\habit\views.py changed, reloading.
+Watching for file changes with StatReloader
+Z:\MyProjects\Habit\habit\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Z:\MyProjects\Habit\habit\views.py changed, reloading.
+Watching for file changes with StatReloader
+Z:\MyProjects\Habit\habit\views.py changed, reloading.
+Watching for file changes with StatReloader
+Method Not Allowed: /habit/public/
+"POST /habit/public/ HTTP/1.1" 405 41
+"GET /habit/public/ HTTP/1.1" 200 807
+"GET /habit/ HTTP/1.1" 200 807
+Forbidden: /habit/
+"POST /habit/ HTTP/1.1" 403 9925
+"POST /habit/ HTTP/1.1" 201 10675
+"GET /habit/ HTTP/1.1" 200 998
+"GET /habit/public/ HTTP/1.1" 200 807
+Not Found: /habit/create/
+"GET /habit/create/ HTTP/1.1" 404 18128
+Not Found: /habit/retrieve/
+"GET /habit/retrieve/ HTTP/1.1" 404 18146
+Not Found: /habit/retrieve/2/
+"GET /habit/retrieve/2/ HTTP/1.1" 404 3194
+"GET /habit/2/ HTTP/1.1" 200 10503
+Not Found: /habit/2/delete/
+"GET /habit/2/delete/ HTTP/1.1" 404 3188
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 2455
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2506
+"GET /habit/ HTTP/1.1" 200 19976
+"GET /habit/public/ HTTP/1.1" 200 12827
+"GET /habit/public/ HTTP/1.1" 200 12827
+Z:\MyProjects\Habit\config\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Z:\MyProjects\Habit\config\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Z:\MyProjects\Habit\config\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Z:\MyProjects\Habit\config\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Z:\MyProjects\Habit\config\urls.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /swagger/ HTTP/1.1" 200 2468
+"GET /static/drf-yasg/style.css HTTP/1.1" 200 1047
+"GET /static/drf-yasg/swagger-ui-init.js HTTP/1.1" 200 15480
+"GET /static/drf-yasg/insQ.min.js HTTP/1.1" 200 2093
+"GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css HTTP/1.1" 200 145206
+"GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js HTTP/1.1" 200 1046583
+"GET /static/drf-yasg/immutable.min.js HTTP/1.1" 200 56904
+"GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js HTTP/1.1" 200 322863
+"GET /static/drf-yasg/swagger-ui-dist/favicon-32x32.png HTTP/1.1" 200 628
+"GET /swagger/?format=openapi HTTP/1.1" 200 4484
+"GET /swagger/?format=openapi HTTP/1.1" 200 4484
+Not Found: /accounts/logout/
+"GET /accounts/logout/?next=/swagger/ HTTP/1.1" 404 3068
+"GET /swagger/ HTTP/1.1" 200 2468
+"GET /swagger/?format=openapi HTTP/1.1" 200 4484
+Z:\MyProjects\Habit\habit\views.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /habits/public/
+Watching for file changes with StatReloader
+Not Found: /habits/public/
+Z:\MyProjects\Habit\habit\models.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /habit/
+Traceback (most recent call last):
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedTable: ОШИБКА:  отношение "habit_relatedhabit" не существует
+LINE 1: ...tedhabit"."id", "habit_relatedhabit"."habit" FROM "habit_rel...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "Z:\MyProjects\Habit\habit\views.py", line 80, in create
+    return super().create(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\mixins.py", line 18, in create
+    serializer.is_valid(raise_exception=True)
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\serializers.py", line 223, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\serializers.py", line 442, in run_validation
+    value = self.to_internal_value(data)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\serializers.py", line 499, in to_internal_value
+    validated_value = field.run_validation(primitive_value)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\relations.py", line 155, in run_validation
+    return super().run_validation(data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\fields.py", line 538, in run_validation
+    value = self.to_internal_value(data)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\relations.py", line 259, in to_internal_value
+    return queryset.get(pk=data)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\db\models\query.py", line 645, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: ОШИБКА:  отношение "habit_relatedhabit" не существует
+LINE 1: ...tedhabit"."id", "habit_relatedhabit"."habit" FROM "habit_rel...
+                                                             ^
+
+Internal Server Error: /habit/
+Traceback (most recent call last):
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedTable: ОШИБКА:  отношение "habit_relatedhabit" не существует
+LINE 1: ...tedhabit"."id", "habit_relatedhabit"."habit" FROM "habit_rel...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "Z:\MyProjects\Habit\habit\views.py", line 80, in create
+    return super().create(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\mixins.py", line 18, in create
+    serializer.is_valid(raise_exception=True)
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\serializers.py", line 223, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\serializers.py", line 442, in run_validation
+    value = self.to_internal_value(data)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\serializers.py", line 499, in to_internal_value
+    validated_value = field.run_validation(primitive_value)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\relations.py", line 155, in run_validation
+    return super().run_validation(data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\fields.py", line 538, in run_validation
+    value = self.to_internal_value(data)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\relations.py", line 259, in to_internal_value
+    return queryset.get(pk=data)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\db\models\query.py", line 645, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: ОШИБКА:  отношение "habit_relatedhabit" не существует
+LINE 1: ...tedhabit"."id", "habit_relatedhabit"."habit" FROM "habit_rel...
+                                                             ^
+
+Forbidden: /habit/4/
+Forbidden: /habit/4/
+Forbidden: /habit/4/
+Forbidden: /habit/4/
+Forbidden: /habit/4/
+Forbidden: /habit/4/
+Forbidden: /habit/4/
+Forbidden: /habit/4/
+Forbidden: /habit/4/
+Forbidden: /habit/4/
+Forbidden: /habit/4/
+Not Found: /habits/
+Forbidden: /habit/4/
+Bad Request: /habit/
+Forbidden: /habit/4/
+Bad Request: /habit/
+Forbidden: /habit/4/
+Bad Request: /habit/
+Forbidden: /habit/4/
+Bad Request: /habit/
+Forbidden: /habit/4/
+Bad Request: /habit/
+Forbidden: /habit/4/
+Bad Request: /habit/
+Forbidden: /habit/4/
+Bad Request: /habit/
+Forbidden: /habit/4/
+Bad Request: /habit/
+Forbidden: /habit/4/
+Bad Request: /habit/
+Forbidden: /habit/4/
+Bad Request: /habit/
+Forbidden: /habit/4/
+Bad Request: /habit/
+Forbidden: /habit/4/
+Bad Request: /habit/
+Forbidden: /habit/4/
+Bad Request: /habit/
+Forbidden: /habit/4/
+Bad Request: /habit/
+Forbidden: /habit/4/
+Bad Request: /habit/
+Forbidden: /habit/4/
+Bad Request: /habit/
+Forbidden: /habit/4/
+Bad Request: /habit/
+Forbidden: /habit/4/
+Bad Request: /habit/
+Forbidden: /habit/4/
+Bad Request: /habit/
+Forbidden: /habit/4/
+Bad Request: /habit/
+Forbidden: /habit/4/
+Bad Request: /habit/
+Forbidden: /habit/4/
+Bad Request: /habit/
+Forbidden: /habit/4/
+Bad Request: /habit/
+Forbidden: /habit/4/
+Bad Request: /habit/
+Forbidden: /habit/4/
+Bad Request: /habit/
+Forbidden: /habit/4/
+Bad Request: /habit/
+Forbidden: /habit/4/
+Not Found: /
+"GET / HTTP/1.1" 404 2987
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3038
+Internal Server Error: /habit/
+Traceback (most recent call last):
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedTable: ОШИБКА:  отношение "habit_relatedhabit" не существует
+LINE 1: ...tedhabit"."id", "habit_relatedhabit"."habit" FROM "habit_rel...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\renderers.py", line 727, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\renderers.py", line 699, in get_context
+    'post_form': self.get_rendered_html_form(data, view, 'POST', request),
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\renderers.py", line 508, in get_rendered_html_form
+    return self.render_form_for_serializer(serializer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\renderers.py", line 518, in render_form_for_serializer
+    return form_renderer.render(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\renderers.py", line 372, in render
+    return template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\defaulttags.py", line 243, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\library.py", line 237, in render
+    output = self.func(*resolved_args, **resolved_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\templatetags\rest_framework.py", line 86, in render_field
+    return renderer.render_field(field, style)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\renderers.py", line 351, in render_field
+    return template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\defaulttags.py", line 194, in render
+    values = self.sequence.resolve(context, ignore_failures=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 718, in resolve
+    obj = self.var.resolve(context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 850, in resolve
+    value = self._resolve_lookup(context)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 917, in _resolve_lookup
+    current = current()
+              ^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\relations.py", line 215, in iter_options
+    self.get_choices(cutoff=self.html_cutoff),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\relations.py", line 201, in get_choices
+    return {
+           ^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\db\models\query.py", line 400, in __iter__
+    self._fetch_all()
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: ОШИБКА:  отношение "habit_relatedhabit" не существует
+LINE 1: ...tedhabit"."id", "habit_relatedhabit"."habit" FROM "habit_rel...
+                                                             ^
+
+"GET /habit/ HTTP/1.1" 500 329899
+Internal Server Error: /habit/
+Traceback (most recent call last):
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedTable: ОШИБКА:  отношение "habit_relatedhabit" не существует
+LINE 1: ...tedhabit"."id", "habit_relatedhabit"."habit" FROM "habit_rel...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\renderers.py", line 727, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\renderers.py", line 699, in get_context
+    'post_form': self.get_rendered_html_form(data, view, 'POST', request),
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\renderers.py", line 508, in get_rendered_html_form
+    return self.render_form_for_serializer(serializer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\renderers.py", line 518, in render_form_for_serializer
+    return form_renderer.render(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\renderers.py", line 372, in render
+    return template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\defaulttags.py", line 243, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\library.py", line 237, in render
+    output = self.func(*resolved_args, **resolved_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\templatetags\rest_framework.py", line 86, in render_field
+    return renderer.render_field(field, style)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\renderers.py", line 351, in render_field
+    return template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\defaulttags.py", line 194, in render
+    values = self.sequence.resolve(context, ignore_failures=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 718, in resolve
+    obj = self.var.resolve(context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 850, in resolve
+    value = self._resolve_lookup(context)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 917, in _resolve_lookup
+    current = current()
+              ^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\relations.py", line 215, in iter_options
+    self.get_choices(cutoff=self.html_cutoff),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\relations.py", line 201, in get_choices
+    return {
+           ^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\db\models\query.py", line 400, in __iter__
+    self._fetch_all()
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: ОШИБКА:  отношение "habit_relatedhabit" не существует
+LINE 1: ...tedhabit"."id", "habit_relatedhabit"."habit" FROM "habit_rel...
+                                                             ^
+
+"GET /habit/ HTTP/1.1" 500 330036
+Internal Server Error: /habit/
+Traceback (most recent call last):
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedTable: ОШИБКА:  отношение "habit_relatedhabit" не существует
+LINE 1: ...tedhabit"."id", "habit_relatedhabit"."habit" FROM "habit_rel...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\renderers.py", line 727, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\renderers.py", line 699, in get_context
+    'post_form': self.get_rendered_html_form(data, view, 'POST', request),
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\renderers.py", line 508, in get_rendered_html_form
+    return self.render_form_for_serializer(serializer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\renderers.py", line 518, in render_form_for_serializer
+    return form_renderer.render(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\renderers.py", line 372, in render
+    return template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\defaulttags.py", line 243, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\library.py", line 237, in render
+    output = self.func(*resolved_args, **resolved_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\templatetags\rest_framework.py", line 86, in render_field
+    return renderer.render_field(field, style)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\renderers.py", line 351, in render_field
+    return template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\defaulttags.py", line 194, in render
+    values = self.sequence.resolve(context, ignore_failures=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 718, in resolve
+    obj = self.var.resolve(context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 850, in resolve
+    value = self._resolve_lookup(context)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 917, in _resolve_lookup
+    current = current()
+              ^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\relations.py", line 215, in iter_options
+    self.get_choices(cutoff=self.html_cutoff),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\relations.py", line 201, in get_choices
+    return {
+           ^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\db\models\query.py", line 400, in __iter__
+    self._fetch_all()
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: ОШИБКА:  отношение "habit_relatedhabit" не существует
+LINE 1: ...tedhabit"."id", "habit_relatedhabit"."habit" FROM "habit_rel...
+                                                             ^
+
+"GET /habit/ HTTP/1.1" 500 330036
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 2987
+Internal Server Error: /habit/
+Traceback (most recent call last):
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedTable: ОШИБКА:  отношение "habit_relatedhabit" не существует
+LINE 1: ...tedhabit"."id", "habit_relatedhabit"."habit" FROM "habit_rel...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\renderers.py", line 727, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\renderers.py", line 699, in get_context
+    'post_form': self.get_rendered_html_form(data, view, 'POST', request),
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\renderers.py", line 508, in get_rendered_html_form
+    return self.render_form_for_serializer(serializer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\renderers.py", line 518, in render_form_for_serializer
+    return form_renderer.render(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\renderers.py", line 372, in render
+    return template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\defaulttags.py", line 243, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\library.py", line 237, in render
+    output = self.func(*resolved_args, **resolved_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\templatetags\rest_framework.py", line 86, in render_field
+    return renderer.render_field(field, style)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\renderers.py", line 351, in render_field
+    return template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\defaulttags.py", line 194, in render
+    values = self.sequence.resolve(context, ignore_failures=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 718, in resolve
+    obj = self.var.resolve(context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 850, in resolve
+    value = self._resolve_lookup(context)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\template\base.py", line 917, in _resolve_lookup
+    current = current()
+              ^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\relations.py", line 215, in iter_options
+    self.get_choices(cutoff=self.html_cutoff),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\relations.py", line 201, in get_choices
+    return {
+           ^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\db\models\query.py", line 400, in __iter__
+    self._fetch_all()
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: ОШИБКА:  отношение "habit_relatedhabit" не существует
+LINE 1: ...tedhabit"."id", "habit_relatedhabit"."habit" FROM "habit_rel...
+                                                             ^
+
+"GET /habit/ HTTP/1.1" 500 329899
+Z:\MyProjects\Habit\habit\models.py changed, reloading.
+Watching for file changes with StatReloader
+Z:\MyProjects\Habit\config\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Z:\MyProjects\Habit\habit\admin.py changed, reloading.
+Watching for file changes with StatReloader
+Z:\MyProjects\Habit\habit\models.py changed, reloading.
+Watching for file changes with StatReloader
+Z:\MyProjects\Habit\habit\models.py changed, reloading.
+Watching for file changes with StatReloader
+Z:\MyProjects\Habit\habit\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+Z:\MyProjects\Habit\habit\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Z:\MyProjects\Habit\habit\views.py changed, reloading.
+Watching for file changes with StatReloader
+Z:\MyProjects\Habit\users\migrations\0001_initial.py changed, reloading.
+Watching for file changes with StatReloader
+Z:\MyProjects\Habit\users\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Z:\MyProjects\Habit\habit\models.py changed, reloading.
+Watching for file changes with StatReloader
