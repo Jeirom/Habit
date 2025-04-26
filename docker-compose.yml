@@ -50,6 +50,23 @@ services:
       - redis
       - db
 
+  celery-beat:
+    build:
+    context: ./app
+    container_name: celery-beat
+    entrypoint: celery
+    command: -A celery_app.celery beat --loglevel=info
+    volumes:
+      - .:/var/www/app/beat
+    links:
+      - celery-worker
+      - redis
+    depends_on:
+      - celery-worker
+      - redis
+    networks:
+      - pipeline-net
+
 
 volumes:
   postgres_data:
