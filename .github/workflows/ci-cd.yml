@@ -142,14 +142,18 @@ jobs:
       - name: Set up SSH
         uses: webfactory/ssh-agent@v0.8.0
         with:
-          ssh-private-key: ${{ secrets.SSH_KEY }}
+          ssh-private-key: ${{ secrets.SSH_KEY_PRIVATE }}
+
+      - name: Проверка IP сервера
+        run:
+          echo "IP сервера: ${{ secrets.SERVER_IP }}"
 
       - name: Copy file
         uses: appleboy/scp-action@v0.1.7
         with:
           host: ${{ secrets.SERVER_IP }}
           username: ${{ secrets.SSH_USER }}
-          key: ${{ secrets.SSH_KEY }}
+          key: ${{ secrets.SSH_KEY_PRIVATE }}
           source: "docker-compose.yml,.env"
           target: ${{ secrets.DEPLOY_DIR }}
 
