@@ -27,7 +27,9 @@ class User(AbstractUser):
         max_length=150, verbose_name="Токен", blank=True, null=True
     )
     is_active = models.BooleanField(blank=True, null=True)
-    tg_id = models.CharField(max_length=255, blank=True, null=True, verbose_name="Telegram ID")
+    tg_id = models.CharField(
+        max_length=255, blank=True, null=True, verbose_name="Telegram ID"
+    )
 
     USERNAME_FIELD = "email"
     REQUIRED_FIELDS = []
