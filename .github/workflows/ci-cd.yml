@@ -66,14 +66,14 @@ jobs:
           SECRET_KEY: ${{ secrets.SECRET_KEY }}
           TESTING: '1'
         run: |
-          cd Z:/MyProjects/Habit
+        working-directory: ./MyProjects/Habit
           python manage.py migrate
 
       - name: Запустить тесты
         env:
           STRIPE_API_KEY: ${{ secrets.STRIPE_API_KEY }}
         run: |
-          cd Z:/MyProjects/Habit
+        working-directory: ./MyProjects/Habit
           python manage.py test --noinput
 
   build:
