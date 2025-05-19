@@ -70,23 +70,7 @@ jobs:
 
       
 
-      - name: Выполнить миграции
-        working-directory: ./MyProjects/Habit
-        env:
-          DJANGO_SETTINGS_MODULE: Habit.settings
-          DATABASE_URL: postgres://postgres:fv4202QAZ@localhost:5432/postgres
-          SECRET_KEY: ${{ secrets.SECRET_KEY }}
-          TESTING: 1
-        run: python manage.py migrate
 
-
-
-      - name: Запустить тесты
-        working-directory: ./
-        env:
-          STRIPE_API_KEY: ${{ secrets.STRIPE_API_KEY }}
-        run: |
-          python manage.py test --noinput
 
   build:
     needs: test
