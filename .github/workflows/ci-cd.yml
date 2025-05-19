@@ -12,7 +12,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.11.5'
+          python-version: '3.12'
 
       - name: Install flake8
         run: |
@@ -51,6 +51,10 @@ jobs:
           TESTING: '1'
         run: python manage.py migrate
 
+      - name: Run tests
+        env:
+          STRIPE_API_KEY: ${{ secrets.STRIPE_API_KEY }}
+        run: python manage.py test --noinput
 
   build:
     needs: test
