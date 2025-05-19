@@ -55,6 +55,11 @@ jobs:
         run: |
           docker run -d --name postgres-test -e POSTGRES_PASSWORD=fv4202QAZ -e POSTGRES_DB=postgres -p 5432:5432 postgres:16
           sleep 15
+        
+
+      - name: Проверка наличия папки
+        run: |
+          ls -la ./MyProjects/Habit
 
       - name: Set environment variables for Django
         working-directory: ./MyProjects/Habit
