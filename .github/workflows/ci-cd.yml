@@ -57,9 +57,10 @@ jobs:
           sleep 15
         
 
-      - name: Проверка наличия папки
+      - name: Проверка текущей директории
         run: |
-          ls -la ./MyProjects/Habit
+          pwd
+          ls -la
 
       - name: Set environment variables for Django
         working-directory: ./Habit
