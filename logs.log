@@ -2580,3 +2580,5 @@ LINE 1: SELECT COUNT(*) AS "__count" FROM "habit_habit"
 
 "GET /habit/ HTTP/1.1" 500 190022
 Watching for file changes with StatReloader
+Z:\MyProjects\Habit\config\settings.py changed, reloading.
+Watching for file changes with StatReloader
