@@ -62,7 +62,7 @@ jobs:
           ls -la ./MyProjects/Habit
 
       - name: Set environment variables for Django
-        working-directory: ./MyProjects/Habit
+        working-directory: ./Habit
         run: |
           echo "DJANGO_SETTINGS_MODULE=Habit.settings" >> $GITHUB_ENV
           echo "DATABASE_URL=postgres://postgres:fv4202QAZ@localhost:5432/postgres" >> $GITHUB_ENV
