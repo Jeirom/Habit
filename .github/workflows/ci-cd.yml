@@ -51,10 +51,7 @@ jobs:
           # Ждем, пока база данных станет доступна
           sleep 15
 
-      - name: Set environment variables for testing
-        run: |
-          echo "DJANGO_SETTINGS_MODULE=jeirom.settings" >> $GITHUB_ENV
-          echo "DATABASE_URL=postgres://postgres:fv4202QAZ@localhost:5432/postgres" >> $GITHUB_ENV
+
           
 
       - name: Run migrations
