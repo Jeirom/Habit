@@ -12,7 +12,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.12'
+          python-version: '3.11.5'
 
       - name: Install flake8
         run: |
@@ -40,6 +40,14 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Перейти в директорию проекта
+        run: |
+          cd Z:/MyProjects/Habit
+
+      - name: Установить PYTHONPATH
+        run: |
+          echo "PYTHONPATH=$(pwd)" >> $GITHUB_ENV
+
       - name: Set environment variables for testing
         env:
           TESTING: '1'
@@ -48,25 +56,27 @@ jobs:
       - name: Start PostgreSQL in Docker
         run: |
           docker run -d --name postgres-test -e POSTGRES_PASSWORD=fv4202QAZ -e POSTGRES_DB=postgres -p 5432:5432 postgres:16
-          # Ждем, пока база данных станет доступна
           sleep 15
 
-      - name: Set environment variables for testing
+      - name: Set environment variables for Django
         run: |
           echo "DJANGO_SETTINGS_MODULE=Habit.settings" >> $GITHUB_ENV
           echo "DATABASE_URL=postgres://postgres:fv4202QAZ@localhost:5432/postgres" >> $GITHUB_ENV
-          
 
-      - name: Run migrations
+      - name: Выполнить миграции
         env:
           SECRET_KEY: ${{ secrets.SECRET_KEY }}
           TESTING: '1'
-        run: python manage.py migrate
+        run: |
+          cd Z:/MyProjects/Habit
+          python manage.py migrate
 
-      - name: Run tests
+      - name: Запустить тесты
         env:
           STRIPE_API_KEY: ${{ secrets.STRIPE_API_KEY }}
-        run: python manage.py test --noinput
+        run: |
+          cd Z:/MyProjects/Habit
+          python manage.py test --noinput
 
   build:
     needs: test
@@ -74,23 +84,23 @@ jobs:
     steps:
       - name: Check out code
         uses: actions/checkout@v3
-      - name: Create .env file
+      - name: Создать .env файл
         run: |
           touch .env
           echo '"${{ secrets.SECRET_KEY }}"' | sed "s/\"//g" > .env
 
-      - name: Login to Docker Hub
+      - name: Войти в Docker Hub
         run: |
           echo "${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}" | docker login -u ${{ secrets.DOCKER_HUB_USERNAME }} --password-stdin
 
-      - name: Build Docker images
+      - name: Построить Docker-образы
         run: |
           docker build --no-cache -t ${{ secrets.DOCKER_HUB_USERNAME }}/habit-tracker:latest .
           docker build --no-cache -t ${{ secrets.DOCKER_HUB_USERNAME }}/habit-tracker-nginx:latest nginx/.
           docker build --no-cache -t ${{ secrets.DOCKER_HUB_USERNAME }}/celeri-worker:latest .
           docker build --no-cache -t ${{ secrets.DOCKER_HUB_USERNAME }}/celeri-beat:latest .
 
-      - name: Push Docker image to Docker Hub
+      - name: Отправить образы в Docker Hub
         run: |
           docker push ${{ secrets.DOCKER_HUB_USERNAME }}/habit-tracker:latest
           docker push ${{ secrets.DOCKER_HUB_USERNAME }}/habit-tracker-nginx:latest
@@ -104,12 +114,12 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v3
 
-      - name: Create .env file
+      - name: Создать .env файл
         run: |
           touch .env
           echo '"${{ secrets.ENV_FILE }}"' | sed "s/\"//g" > .env
 
-      - name: copy file
+      - name: Копировать файлы
         uses: appleboy/scp-action@v1
         with:
           host: ${{ secrets.SERVER_IP }}
@@ -123,12 +133,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Set up SSH
+      - name: Настроить SSH
         uses: webfactory/ssh-agent@v0.8.0
         with:
           ssh-private-key: ${{ secrets.SSH_KEY_PRIVATE }}
 
-      - name: Run Commands via SSH
+      - name: Выполнить команды через SSH
         env:
           DEBUG: True
         run: |
