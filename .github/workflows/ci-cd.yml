@@ -63,10 +63,11 @@ jobs:
           ls -la
 
       - name: Set environment variables for Django
-        working-directory: ./Habit
+        working-directory: ./
         run: |
           echo "DJANGO_SETTINGS_MODULE=Habit.settings" >> $GITHUB_ENV
           echo "DATABASE_URL=postgres://postgres:fv4202QAZ@localhost:5432/postgres" >> $GITHUB_ENV
+
       
 
       - name: Выполнить миграции
