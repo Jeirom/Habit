@@ -71,7 +71,7 @@ jobs:
       
 
       - name: Выполнить миграции
-        working-directory: ./MyProjects/Habit
+        working-directory: ./
         env:
           SECRET_KEY: ${{ secrets.SECRET_KEY }}
           TESTING: '1'
@@ -80,7 +80,7 @@ jobs:
 
 
       - name: Запустить тесты
-        working-directory: ./MyProjects/Habit
+        working-directory: ./
         env:
           STRIPE_API_KEY: ${{ secrets.STRIPE_API_KEY }}
         run: |
