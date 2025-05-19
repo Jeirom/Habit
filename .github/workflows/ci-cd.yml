@@ -42,7 +42,7 @@ jobs:
 
       - name: Перейти в директорию проекта
         run: |
-          cd Z:/MyProjects/Habit
+          cd ./MyProjects/Habit
 
       - name: Установить PYTHONPATH
         run: |
