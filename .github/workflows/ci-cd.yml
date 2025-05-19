@@ -71,7 +71,6 @@ jobs:
       
 
       - name: Выполнить миграции
-        working-directory: ./MyProjects/Habit
         env:
           SECRET_KEY: ${{ secrets.SECRET_KEY }}
           TESTING: '1'
