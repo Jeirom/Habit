@@ -40,9 +40,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Перейти в директорию проекта
-        run: |
-          cd ./MyProjects/Habit
+
 
       - name: Установить PYTHONPATH
         run: |
