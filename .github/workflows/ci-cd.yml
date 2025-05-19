@@ -45,6 +45,18 @@ jobs:
           TESTING: '1'
         run: echo "TESTING=1" >> $GITHUB_ENV
 
+      - name: Start PostgreSQL in Docker
+        run: |
+          docker run -d --name postgres-test -e POSTGRES_PASSWORD=fv4202QAZ -e POSTGRES_DB=postgres -p 5432:5432 postgres:16
+          # Ждем, пока база данных станет доступна
+          sleep 15
+
+      - name: Set environment variables for testing
+        run: |
+          echo "DJANGO_SETTINGS_MODULE=your_project.settings" >> $GITHUB_ENV
+          echo "DATABASE_URL=postgres://postgres:fv4202QAZ@localhost:5432/postgres" >> $GITHUB_ENV
+          
+
       - name: Run migrations
         env:
           SECRET_KEY: ${{ secrets.SECRET_KEY }}

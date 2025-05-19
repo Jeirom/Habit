@@ -2483,3 +2483,99 @@ Z:\MyProjects\Habit\habit\models.py changed, reloading.
 Watching for file changes with StatReloader
 Watching for file changes with StatReloader
 Watching for file changes with StatReloader
+Not Found: /mvita/doctors/
+"GET /mvita/doctors/ HTTP/1.1" 404 3047
+Internal Server Error: /habit/
+Traceback (most recent call last):
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedTable: ОШИБКА:  отношение "habit_habit" не существует
+LINE 1: SELECT COUNT(*) AS "__count" FROM "habit_habit"
+                                          ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\mixins.py", line 40, in list
+    page = self.paginate_queryset(queryset)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\generics.py", line 175, in paginate_queryset
+    return self.paginator.paginate_queryset(queryset, self.request, view=self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\rest_framework\pagination.py", line 211, in paginate_queryset
+    self.page = paginator.page(page_number)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\core\paginator.py", line 89, in page
+    number = self.validate_number(number)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\core\paginator.py", line 70, in validate_number
+    if number > self.num_pages:
+                ^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\core\paginator.py", line 116, in num_pages
+    if self.count == 0 and not self.allow_empty_first_page:
+       ^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\core\paginator.py", line 110, in count
+    return c()
+           ^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\db\models\query.py", line 620, in count
+    return self.query.get_count(using=self.db)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\db\models\sql\query.py", line 630, in get_count
+    return obj.get_aggregation(using, {"__count": Count("*")})["__count"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\db\models\sql\query.py", line 616, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\krizh\AppData\Local\pypoetry\Cache\virtualenvs\habit-5Rn4Q8cq-py3.11\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: ОШИБКА:  отношение "habit_habit" не существует
+LINE 1: SELECT COUNT(*) AS "__count" FROM "habit_habit"
+                                          ^
+
+"GET /habit/ HTTP/1.1" 500 190022
