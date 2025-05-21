@@ -113,12 +113,15 @@ jobs:
           touch .env
           echo '"${{ secrets.ENV_FILE }}"' | sed "s/\"//g" > .env
 
-      - name: Копировать файлы
+      - name: Copy files via SCP
         uses: appleboy/scp-action@v1
         with:
           host: ${{ secrets.SERVER_IP }}
           username: ${{ secrets.SSH_USER }}
-          key: ${{ secrets.SSH_KEY }}
+          key: |
+            -----BEGIN OPENSSH PRIVATE KEY-----
+            ...
+            -----END OPENSSH PRIVATE KEY-----
           source: "docker-compose.yml,.env"
           target: ${{ secrets.DEPLOY_DIR }}
 
