@@ -130,7 +130,7 @@ jobs:
       - name: Настроить SSH
         uses: webfactory/ssh-agent@v0.8.0
         with:
-          ssh-private-key: ${{ secrets.SSH_KEY_PRIVATE }}
+          ssh-private-key: ${{ secrets.SSH_KEY }}
 
       - name: Выполнить команды через SSH
         env:
