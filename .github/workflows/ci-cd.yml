@@ -129,6 +129,9 @@ jobs:
     needs: [build, copy_files_in_server]
     runs-on: ubuntu-latest
 
+    steps:
+      - name: Настроить SSH
+        uses: webfactory/ssh-agent@v0.8.0
 
 
       - name: Выполнить команды через SSH
