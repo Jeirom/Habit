@@ -130,10 +130,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Настроить SSH
-        uses: webfactory/ssh-agent@v0.8.0
-        with:
-          ssh-private-key: ${{ secrets.SSH_KEY }}
+      - name: Запустить ssh-agent
+        run: |
+          eval "$(ssh-agent -s)"
+          echo "${{ secrets.SSH_KEY }}" | ssh-add - # В этом случае passphrase не нужен, если ключ без passphrase
+
 
       - name: Выполнить команды через SSH
         env:
