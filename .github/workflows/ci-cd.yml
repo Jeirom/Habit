@@ -129,11 +129,7 @@ jobs:
     needs: [build, copy_files_in_server]
     runs-on: ubuntu-latest
 
-    steps:
-      - name: Настроить SSH
-        uses: webfactory/ssh-agent@v0.8.0
-        with:
-          ssh-private-key: ${{ secrets.SSH_KEY }}
+
 
       - name: Выполнить команды через SSH
         env:
