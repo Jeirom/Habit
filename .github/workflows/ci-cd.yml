@@ -125,39 +125,28 @@ jobs:
 #          source: "docker-compose.yml,.env"
 #          target: ${{ secrets.DEPLOY_DIR }}
 
-  run_server:
-    needs: [build, copy_files_in_server]
+  deploy:
+    name: Deploy to server
     runs-on: ubuntu-latest
+    needs: test
 
     steps:
-      - name: Настроить SSH
-        uses: webfactory/ssh-agent@v0.8.0
+      - uses: actions/checkout@v4
 
-
-      - name: Выполнить команды через SSH
-        env:
-          DEBUG: True
-        run: |
-          ssh -o StrictHostKeyChecking=no -vT ${{ secrets.SSH_USER }}@${{ secrets.SERVER_IP }} << 'EOF'
-            cd "${{ secrets.DEPLOY_DIR }}"
-          
-            # Остановить все контейнеры
+      - name: Deploy over SSH
+        uses: appleboy/ssh-action@v1.0.0
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_KEY }}
+          password: ${{ secrets.SSH_PASSWORD }}
+          script: |
+            cd ${{ secrets.DEPLOY_DIR }}
             sudo docker ps -aq | xargs -r sudo docker rm -f
-          
-            # Удалить все образы, связанные с проектом
             sudo docker images -q | xargs -r sudo docker rmi -f
-          
-            # Очистить все неиспользуемые данные
             sudo docker system prune -f --volumes
-          
-            # Обновить образы из Docker Hub
             sudo docker pull ${{ secrets.DOCKER_HUB_USERNAME }}/habit-tracker:latest
             sudo docker pull ${{ secrets.DOCKER_HUB_USERNAME }}/habit-tracker-nginx:latest
             sudo docker pull ${{ secrets.DOCKER_HUB_USERNAME }}/celeri-worker:latest
             sudo docker pull ${{ secrets.DOCKER_HUB_USERNAME }}/celeri-beat:latest
-          
-            # Запустить контейнеры
             sudo docker compose up -d --build
-          EOF
-#
-#
