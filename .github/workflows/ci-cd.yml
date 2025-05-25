@@ -150,4 +150,5 @@ jobs:
             sudo docker pull ${{ secrets.DOCKER_HUB_USERNAME }}/celeri-worker:latest
             sudo docker pull ${{ secrets.DOCKER_HUB_USERNAME }}/celeri-beat:latest
             sudo docker compose up -d --build
+        # Устанавливаем тайм-аут для всего действия
         timeout: 1800
