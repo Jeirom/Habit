@@ -151,5 +151,5 @@ jobs:
             sudo docker pull ${{ secrets.DOCKER_HUB_USERNAME }}/celeri-beat:latest
             sudo docker compose up -d --build
         timeout-minutes: 30
-                  '
+
 
