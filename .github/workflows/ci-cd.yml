@@ -139,7 +139,7 @@ jobs:
           host: ${{ secrets.SERVER_IP }}
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_KEY }}
-          password: ${{ secrets.SSH_PASSWORD }}
+          passphrase: ${{ secrets.SSH_PASSWORD }}
           script: |
             cd ${{ secrets.DEPLOY_DIR }}
             sudo docker ps -aq | xargs -r sudo docker rm -f
