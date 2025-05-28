@@ -54,7 +54,6 @@ services:
 
   celery-beat:
     build: .
-    context: ./app
     container_name: celery-beat
     entrypoint: celery
     command: -A celery_app.celery beat --loglevel=info
