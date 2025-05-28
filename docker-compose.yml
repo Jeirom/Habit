@@ -65,8 +65,7 @@ services:
     depends_on:
       - celery-worker
       - redis
-    networks:
-      - pipeline-net
+
 
 
 volumes:
