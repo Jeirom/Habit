@@ -60,10 +60,10 @@ services:
     volumes:
       - .:/var/www/app/beat
     links:
-      - celery-worker
+      - celery
       - redis
     depends_on:
-      - celery-worker
+      - celery
       - redis
 
 
