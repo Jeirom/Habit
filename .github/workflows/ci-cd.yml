@@ -131,9 +131,6 @@ jobs:
           passphrase: ${{ secrets.SSH_PASSWORD }}
           script: |
             cd ${{ secrets.DEPLOY_DIR }}
-            sudo docker ps -aq | xargs -r sudo docker rm -f
-            sudo docker images -q | xargs -r sudo docker rmi -f
-            sudo docker system prune -f --volumes
             sudo docker pull ${{ secrets.DOCKER_HUB_USERNAME }}/habit-tracker:latest
             sudo docker pull ${{ secrets.DOCKER_HUB_USERNAME }}/habit-tracker-nginx:latest
             sudo docker pull ${{ secrets.DOCKER_HUB_USERNAME }}/celeri-worker:latest
