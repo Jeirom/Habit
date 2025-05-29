@@ -12,6 +12,7 @@ COPY pyproject.toml poetry.lock ./
 
 RUN pip install --upgrade pip \
     && pip install poetry \
+    && pip install celery \
     && poetry config virtualenvs.create false \
     && poetry add celery \
     && poetry install --no-root

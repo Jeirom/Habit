@@ -43,7 +43,8 @@ services:
   celery:
     build: .
     command: >
-      bash -c "celery -A config worker --loglevel=info --pool=solo"
+      bash -c "/usr/local/bin/celery -A config worker --loglevel=info --pool=solo"
+
     volumes:
       - .:/app
     env_file:
